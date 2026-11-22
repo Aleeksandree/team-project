@@ -1,5 +1,83 @@
+import ourProductPic1 from "../../../../assets/landing/ourProducts/ourProductPic1.png";
+import ourProductPic2 from "../../../../assets/landing/ourProducts/ourProductPic2.png";
+import ourProductPic3 from "../../../../assets/landing/ourProducts/ourProductPic3.png";
+import ourProductPic4 from "../../../../assets/landing/ourProducts/ourProductPic4.png";
+import ourProductPic5 from "../../../../assets/landing/ourProducts/ourProductPic5.png";
+import ourProductPic6 from "../../../../assets/landing/ourProducts/ourProductPic6.png";
+import ourProductPic7 from "../../../../assets/landing/ourProducts/ourProductPic7.png";
+import ourProductPic8 from "../../../../assets/landing/ourProducts/ourProductPic8.png";
+
+import ProductCard from "../primitive/ProductCard";
+
 
 const categories = ["SALE", "HOT", "NEW ARRIVALS", "ACCESSORIES"];
+
+const products = [
+  {
+    id: 1,
+    image: ourProductPic1,
+    title: "Spread Collar Shirt",
+    price: "$48.99",
+    rating: "5.0",
+    imageBgColor: "#F0F1F6",
+  },
+  {
+    id: 2,
+    image: ourProductPic2,
+    title: "White Solid Formal Shirt",
+    price: "$38.99",
+    rating: "4.9",
+    imageBgColor: "#EAEBF0",
+  },
+  {
+    id: 3,
+    image: ourProductPic3,
+    title: "Shine On Me Blouse",
+    price: "$42.99",
+    rating: "4.8",
+    imageBgColor: "#F0F0F1",
+  },
+  {
+    id: 4,
+    image: ourProductPic4,
+    title: "Gray Solid Padded Jacket",
+    price: "$32.99",
+    rating: "4.7",
+    imageBgColor: "#DDD6D0",
+  },
+  {
+    id: 5,
+    image: ourProductPic5,
+    title: "Printed Loose T-shirt",
+    price: "$39.99",
+    rating: "5.0",
+    imageBgColor: "#F0EFF5",
+  },
+  {
+    id: 6,
+    image: ourProductPic6,
+    title: "Summer Wind Crop Shirt",
+    price: "$39.95",
+    rating: "4.7",
+    imageBgColor: "#F2F3F8",
+  },
+  {
+    id: 7,
+    image: ourProductPic7,
+    title: "Tailored Jacket",
+    price: "$46.00",
+    rating: "4.9",
+    imageBgColor: "#F2F2F4",
+  },
+  {
+    id: 8,
+    image: ourProductPic8,
+    title: "Solid Round Neck T-shirt",
+    price: "$36.00",
+    rating: "5.0",
+    imageBgColor: "#DDECE2",
+  },
+];
 
 const OurProducts = () => {
   return (
@@ -24,6 +102,20 @@ const OurProducts = () => {
               {category}
             </span>
           ))}
+
+          {/* Products grid */}
+          <div className="mt-16 grid w-full grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 xl:grid-cols-4 xl:gap-x-8">
+            {products.map((product) => (
+              <ProductCard
+                key={product.id}
+                image={product.image}
+                title={product.title}
+                price={product.price}
+                rating={product.rating}
+                imageBgColor={product.imageBgColor}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

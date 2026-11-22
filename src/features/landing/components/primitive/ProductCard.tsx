@@ -5,15 +5,17 @@ interface ProductCardProps {
   title: string;
   price: string;
   rating: string;
+  imageBgColor?: string;
 }
 
-const ProductCard = ({ image, title, price, rating }: ProductCardProps) => {
+const ProductCard = ({ image, title, price, rating, imageBgColor, }: ProductCardProps) => {
   return (
     <article className="flex w-full min-w-0 flex-col items-center">
       <img
         src={image}
         alt={title}
         className="aspect-[430/566] w-full max-w-107.5 object-cover"
+        style={{ backgroundColor: imageBgColor }}
       />
 
       <h3 className="mt-8 text-center font-['Poppins'] text-[18px] font-semibold leading-none text-[#373737] sm:text-[20px] xl:text-[22px]">
