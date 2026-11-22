@@ -10,7 +10,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ image, title, price, rating, imageBgColor, }: ProductCardProps) => {
   return (
-    <article className="flex w-full min-w-0 flex-col items-center">
+    <article className="flex w-full min-w-0 flex-col items-center duration-200 hover:scale-110">
       <img
         src={image}
         alt={title}

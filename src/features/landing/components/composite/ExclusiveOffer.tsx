@@ -77,7 +77,7 @@ const ExclusiveOffer = () => {
             {/* Buy now button */}
             <button
               type="button"
-              className="mt-10 flex h-15 w-50 cursor-pointer items-center justify-center rounded-[3px] bg-[#224F34] font-['Poppins'] text-[16px] font-medium text-white sm:h-18.5 sm:w-57.5 sm:text-[18px]"
+              className="mt-10 flex h-15 w-50 cursor-pointer items-center justify-center rounded-[3px] bg-[#224F34] font-['Poppins'] text-[16px] font-medium text-white transition-all duration-200 hover:scale-105 hover:bg-[#267D49] hover:shadow-lg active:scale-95 active:bg-[#193E2A] focus-visible:outline-offset-4 focus-visible:outline-[#224F34] sm:h-18.5 sm:w-57.5 sm:text-[18px]"
             >
               BUY NOW
             </button>
