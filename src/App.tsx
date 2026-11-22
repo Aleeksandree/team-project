@@ -1,5 +1,6 @@
 import BestSelling from "./features/landing/components/composite/BestSelling";
 import Hero from "./features/landing/components/composite/Hero";
+import OurProducts from "./features/landing/components/composite/OurProducts";
 import Header from "./shared/components/composite/Header";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Hero />
       <BestSelling />
+      <OurProducts />
     </div>
   );
 }
