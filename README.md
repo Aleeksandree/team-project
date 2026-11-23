@@ -73,3 +73,7 @@ export default defineConfig([
 ])
 
 ```
+
+
+
+https://www.figma.com/design/QUujCIxkOL5u6wnjLCqQ07/Fashion-Website-UI-Template--Community-?node-id=0-1&p=f&t=4z2lXHh78JzmgIjw-0
