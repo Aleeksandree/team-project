@@ -52,7 +52,7 @@ const Header = () => {
             <img
               src={rollIcon}
               alt=""
-              className="absolute bottom-0 right-0 h-2.5 w-2.5"
+              className="absolute -bottom-1 -right-1 h-[16px] w-[16px] max-w-none object-contain"
             />
           </button>
 
