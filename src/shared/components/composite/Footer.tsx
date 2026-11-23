@@ -5,10 +5,12 @@ import FacebookIcon from "../../../assets/landing/footer/Facebook.svg";
 import InstagramIcon from "../../../assets/landing/footer/Instagram.svg";
 import TwitterIcon from "../../../assets/landing/footer/Twitter.svg";
 
+// Footer links
 const shopLinks: string[] = ["Products", "Overview", "Pricing", "Releases"];
 
 const companyLinks: string[] = ["About Us", "Contact", "News", "Support"];
 
+// Reusable column component
 interface FooterColumnProps {
   title: string;
   links: string[];
@@ -16,7 +18,7 @@ interface FooterColumnProps {
 
 function FooterColumn({ title, links }: FooterColumnProps) {
   return (
-    <div className="min-w-0 pt-0 2xl:pt-[25px]">
+    <div className="min-w-0 pt-0 xl:pt-[25px]">
       <h3 className="font-roboto-slab text-[18px] font-semibold leading-[27px] text-white">
         {title.toUpperCase()}
       </h3>
@@ -35,22 +37,24 @@ function FooterColumn({ title, links }: FooterColumnProps) {
   );
 }
 
-// Logo and social media section
+// Logo and Social Media section
 function SocialMedia() {
   return (
     <div className="min-w-0">
-      <img
-        src={RivoLogo}
-        alt="Rivo"
-        className="h-auto w-[117px] object-contain"
-      />
+      <div className="h-[61px] w-[117px]">
+        <img
+          src={RivoLogo}
+          alt="Rivo"
+          className="block h-auto w-[117px] object-contain"
+        />
+      </div>
 
       <div className="mt-[52px]">
         <h3 className="font-roboto-slab text-[18px] font-semibold leading-[27px] text-white">
           Social Media
         </h3>
 
-        <div className="mt-[18px] flex items-center gap-[22px]">
+        <div className="mt-[18px] flex items-center gap-[34px]">
           <img
             src={FacebookIcon}
             alt="Facebook"
@@ -73,6 +77,7 @@ function SocialMedia() {
     </div>
   );
 }
+
 // Newsletter section
 function Newsletter() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -80,14 +85,14 @@ function Newsletter() {
   };
 
   return (
-    <div className="min-w-0 pt-0 2xl:pt-[25px]">
+    <div className="min-w-0 pt-0 xl:pt-[25px]">
       <h3 className="font-roboto-slab text-[18px] font-semibold leading-[27px] text-white">
         STAY UP TO DATE
       </h3>
 
       <form
         onSubmit={handleSubmit}
-        className="mt-[32px] flex h-[56px] w-full max-w-[487px] overflow-hidden border border-[#A3F3BE] 2xl:mt-[48px] 2xl:w-[487px]"
+        className="mt-[32px] flex h-[56px] w-full max-w-[487px] overflow-hidden border border-[#A3F3BE] xl:mt-[48px]"
       >
         <input
           type="email"
@@ -100,7 +105,7 @@ function Newsletter() {
 
         <button
           type="submit"
-          className="h-full w-[114px] shrink-0 bg-[#A3F3BE] font-poppins text-[14px] font-medium text-[#224F34] transition-colors hover:bg-[#B9F8CE] focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-white"
+          className="h-full w-[114px] shrink-0 bg-[#A3F3BE] px-2 font-poppins text-[14px] font-medium text-[#224F34] transition-colors hover:bg-[#B9F8CE] focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-white"
         >
           SUBMIT
         </button>
@@ -109,10 +114,10 @@ function Newsletter() {
   );
 }
 
-// Footer bottom section
+// Bottom section: line and legal links
 function FooterBottom() {
   return (
-    <div className="mx-auto mt-12 flex w-[calc(100%-48px)] max-w-[1360px] flex-col gap-6 pb-8 sm:flex-row sm:items-center sm:gap-[34px] sm:pb-0 2xl:absolute 2xl:bottom-[78px] 2xl:left-1/2 2xl:mx-0 2xl:mt-0 2xl:w-[1360px] 2xl:max-w-none 2xl:-translate-x-1/2">
+    <div className="mx-auto mt-12 flex w-[calc(100%-48px)] max-w-[1360px] flex-col gap-6 pb-8 sm:flex-row sm:items-center sm:gap-[34px] sm:pb-0 xl:absolute xl:bottom-[86px] xl:left-[10.65%] xl:mx-0 xl:mt-0 xl:w-[79.8%] xl:max-w-none">
       <div className="h-px w-full flex-1 bg-[#A3F3BE]" />
 
       <nav
@@ -135,11 +140,12 @@ function FooterBottom() {
   );
 }
 
-// Main Footer component
+// Main Footer
 function Footer() {
   return (
-    <footer className="relative min-h-[599px] w-full overflow-hidden bg-[#224F34] text-white 2xl:h-[599px]">
-      <div className="mx-auto grid w-[calc(100%-48px)] max-w-[1360px] grid-cols-1 gap-y-12 pt-12 pb-8 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12 2xl:mx-0 2xl:ml-[calc((100vw-1360px)/2)] 2xl:w-[1379px] 2xl:max-w-none 2xl:grid-cols-[398fr_237fr_257fr_487fr] 2xl:gap-x-0 2xl:pt-[80px] 2xl:pb-0">
+    <footer className="relative min-h-[599px] w-full overflow-hidden bg-[#224F34] text-white xl:h-[599px]">
+      {/* Main content */}
+      <div className="mx-auto grid w-[calc(100%-48px)] max-w-[1360px] grid-cols-1 gap-y-12 pt-12 pb-8 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12 xl:absolute xl:left-[10.65%] xl:top-[80px] xl:mx-0 xl:grid-cols-[398fr_237fr_257fr_487fr] xl:gap-x-0 xl:w-[79.8%] xl:max-w-none xl:p-0">
         <SocialMedia />
 
         <FooterColumn title="Shop" links={shopLinks} />
@@ -149,6 +155,7 @@ function Footer() {
         <Newsletter />
       </div>
 
+      {/* Bottom content */}
       <FooterBottom />
     </footer>
   );
