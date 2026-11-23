@@ -10,14 +10,14 @@ const Hero = () => {
             Discover and Find Your Own Fashion!
           </h1>
 
-          <p className="mt-8 max-w-[565px] font-['Poppins'] text-4 font-medium leading-[220%] tracking-normal text-[#267D49] sm:text-5 xl:text-6">
+          <p className="mt-8 max-w-[565px] font-['Poppins'] text-4 font-medium leading-[220%] tracking-normal text-[#267D49] sm:text-5 xl:text-6  ">
             Explore our curated collection of stylish clothing and accessories
             tailored to your unique taste.
           </p>
 
           <button
             type="button"
-            className="mt-8 flex h-[74px] w-full max-w-[258px] cursor-pointer items-center justify-center rounded-[3px] bg-[#224F34] text-white shadow-[6px_33px_59px_0px_rgba(0,0,0,0.3)]"
+            className="mt-8 flex h-[74px] w-full max-w-[258px] cursor-pointer items-center justify-center rounded-[3px] bg-[#224F34] text-white shadow-[6px_33px_59px_0px_rgba(0,0,0,0.3)] hover:bg-[#377d53] "
           >
             EXPLORE NOW
           </button>

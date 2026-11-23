@@ -60,9 +60,9 @@ const BestSelling = () => {
         {/* See all button */}
         <button
           type="button"
-          className="mt-16 flex min-h-16.25 w-full max-w-56 cursor-pointer items-center justify-center gap-2.5 rounded-[3px] border-2 border-[#224F34] px-13.75 py-4 text-[#224F34]"
+          className="mt-16 flex min-h-16.25 w-full max-w-56 cursor-pointer items-center justify-center gap-2.5 rounded-[3px] border-2 border-[#224F34] px-13.75 py-4 text-[#224F34] hover:bg-[#377d53] hover:text-white"
         >
-          <span className="whitespace-nowrap font-['Poppins'] text-[22px] font-medium leading-none tracking-normal">
+          <span className="whitespace-nowrap font-['Poppins'] text-[22px] font-medium leading-none tracking-normal ">
             See all
           </span>
           <span aria-hidden="true">→</span>
