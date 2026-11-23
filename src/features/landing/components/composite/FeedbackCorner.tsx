@@ -1,6 +1,8 @@
-import leftArrow from "../../../../../assets/landing/feedback/arrow-right.png";
-import rightArrow from "../../../../../assets/landing/feedback/arrow-left.png";
-import quoteIcon from "../../../../../assets/landing/feedback/quote-icon.png";
+import quoteIcon from "../../../../assets/landing/feedback/quote-icon.png";
+import leftArrow from "../../../../assets/landing/feedback/arrow-left.png";
+import rightArrow from "../../../../assets/landing/feedback/arrow-right.png";
+
+
 
 const testimonials = [
   {

@@ -3,8 +3,8 @@ import Hero from "./features/landing/components/composite/Hero";
 import OurProducts from "./features/landing/components/composite/OurProducts";
 import Footer from "./shared/components/composite/Footer";
 import Header from "./shared/components/composite/Header";
-import DesignerClothes from "./features/landing/components/composite/designer-clothes/DesignerClothes";
-import FeedbackCorner from "./features/landing/components/composite/feedback-corner/FeedbackCorner";
+import DesignerClothes from "./features/landing/components/composite/DesignerClothes";
+import FeedbackCorner from "./features/landing/components/composite/FeedbackCorner";
 import ExclusiveOffer from "./features/landing/components/composite/ExclusiveOffer";
 
 function App() {

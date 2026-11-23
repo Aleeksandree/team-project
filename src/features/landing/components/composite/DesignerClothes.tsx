@@ -1,6 +1,6 @@
-import accessoriesImage from "../../../../../assets/landing/categories/woman1.png";
-import dressesImage from "../../../../../assets/landing/categories/woman2.png";
-import outerwearImage from "../../../../../assets/landing/categories/woman3.png";
+import accessoriesImage from "../../../../assets/landing/categories/woman1.png";
+import dressesImage from "../../../../assets/landing/categories/woman2.png";
+import outerwearImage from "../../../../assets/landing/categories/woman3.png";
 
 const categories = [
     {
